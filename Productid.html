@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="C:\Users\Admin\Desktop\JSON Code\data.json"> </script>
+
+	<script type="text/javascript">
+		let pid = data.products.map(id => id.product_id);
+
+		console.log(pid);
+
+		let indexofpid = pid.findIndex(checkpid);
+
+		function checkpid(id) {
+			return id=="p12345";
+		}
+
+		console.log(indexofpid);
+		
+
+
+	</script>
+
+</body>
+</html>

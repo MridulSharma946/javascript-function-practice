@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JSON Code Questions</title>
+</head>
+<body>
+	<p>These are the solutions of given data.</p>
+
+	<script type="text/javascript">
+		const data = {
+		  "platform": {
+		    "name": "ShopEase",
+		    "version": "2.1.0",
+		    "metadata": {
+		      "created": "2024-11-21T10:30:00Z",
+		      "last_updated": "2024-11-20T15:45:00Z",
+		      "supported_languages": ["en", "es", "fr", "de"]
+		    }
+		  },
+		  "users": [
+		    {
+		      "user_id": "a1b2c3d4",
+		      "name": {
+		        "first": "John",
+		        "last": "Doe"
+		      },
+		      "email": "john.doe@example.com",
+		      "roles": ["customer"],
+		      "preferences": {
+		        "currency": "USD",
+		        "notifications": {
+		          "email": true,
+		          "sms": false
+		        }
+		      },
+		      "order_history": [
+		        {
+		          "order_id": "o12345",
+		          "order_date": "2024-11-01T09:00:00Z",
+		          "total_amount": 99.99,
+		          "currency": "USD",
+		          "status": "completed",
+		          "items": [
+		            {
+		              "product_id": "p98765",
+		              "name": "Wireless Headphones",
+		              "quantity": 1,
+		              "price": 79.99
+		            },
+		            {
+		              "product_id": "p12345",
+		              "name": "USB-C Cable",
+		              "quantity": 2,
+		              "price": 10.00
+		            }
+		          ]
+		        }
+		      ]
+		    }
+		  ],
+		  "products": [
+		    {
+		      "product_id": "p98765",
+		      "name": "Wireless Headphones",
+		      "description": "Noise-cancelling over-ear headphones with 30 hours of battery life.",
+		      "category": "Electronics",
+		      "price": 79.99,
+		      "currency": "USD",
+		      "stock": 150,
+		      "reviews": [
+		        {
+		          "review_id": "r001",
+		          "user_id": "a1b2c3d4",
+		          "rating": 5,
+		          "comment": "Great sound quality!",
+		          "date": "2024-11-10T12:00:00Z"
+		        }
+		      ]
+		    },{
+		      "product_id": "p98765",
+		      "name": "Mobile",
+		      "description": "Noise-cancelling over-ear headphones with 30 hours of battery life.",
+		      "category": "Electronics",
+		      "price": 79.99,
+		      "currency": "USD",
+		      "stock": 150,
+		      "reviews": [
+		        {
+		          "review_id": "r001",
+		          "user_id": "a1b2c3d4",
+		          "rating": 5,
+		          "comment": "Great sound quality!",
+		          "date": "2024-11-10T12:00:00Z"
+		        }
+		      ]
+		    },{
+		      "product_id": "p98765",
+		      "name": "Laptop",
+		      "description": "Noise-cancelling over-ear headphones with 30 hours of battery life.",
+		      "category": "Electronics",
+		      "price": 79.99,
+		      "currency": "USD",
+		      "stock": 150,
+		      "reviews": [
+		        {
+		          "review_id": "r001",
+		          "user_id": "a1b2c3d4",
+		          "rating": 5,
+		          "comment": "Great sound quality!",
+		          "date": "2024-11-10T12:00:00Z"
+		        }
+		      ]
+		    }
+		  ],
+		  "orders": [
+		    {
+		      "order_id": "o12345",
+		      "user_id": "a1b2c3d4",
+		      "order_date": "2024-11-01T09:00:00Z",
+		      "shipping_address": {
+		        "street": "123 Main St",
+		        "city": "New York",
+		        "state": "NY",
+		        "zip": "10001",
+		        "country": "USA"
+		      },
+		      "total_amount": 99.99,
+		      "currency": "USD",
+		      "status": "completed",
+		      "items": [
+		        {
+		          "product_id": "p98765",
+		          "quantity": 1
+		        },
+		        {
+		          "product_id": "p12345",
+		          "quantity": 2
+		        }
+		      ]
+		    }
+		  ],
+		  "analytics": {
+		    "daily_visits": 4500,
+		    "sales": {
+		      "2024-11-20": {
+		        "total_orders": 120,
+		        "total_revenue": 9000.50,
+		        "currency": "USD"
+		      },
+		      "2024-11-19": {
+		        "total_orders": 150,
+		        "total_revenue": 11250.00,
+		        "currency": "USD"
+		      }
+		    },
+		    "popular_products": ["p98765", "p12345"]
+		  }
+		}
+
+
+		let namearr = data.products.map(pr => pr.name);
+
+		console.log(namearr);
+
+
+	</script>
+</body>
+</html>

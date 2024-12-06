@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript" src="C:\Users\Admin\Desktop\JSON Code\data.json"> </script>
+
+	<script type="text/javascript">
+		let allprreviews = data.products.flatMap(rev => [rev.reviews]);
+
+		// let flattenedreview = allprreviews.(x => [x.comment]);
+
+		console.log(allprreviews);
+	</script>
+
+</body>
+</html>
